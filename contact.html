@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mysore Ward Contacts</title>
+	<link rel="stylesheet" href="contact.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 500px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; }
+        label { display: block; margin-top: 10px; }
+        select, input, textarea, button { width: 100%; padding: 8px; margin-top: 5px; }
+    </style>
+    <script>
+        const wardData = {
+            "1": "B. Lakshmi",
+            "2": "Prema",
+            "3": "K.V. Sridhar",
+            "4": "Pailavan Srinivas",
+            "5": "Usha",
+            "6": "SBM Manju",
+            "7": "V. Ramesh",
+            "8": "Akmal Pasha",
+            "9": "Samiulla Khan",
+            "10": "Anwar Baig",
+			"11": "Pushpalatha",
+            "12": "Ayaj Pasha",
+            "13": "Ayub Khan",
+            "14": "Savud Khan",
+            "15": "Pradeep Chandra",
+            "16": "Arif Husen",
+            "17": "Reshma Bhanu",
+            "18": "Guru Vinayak",
+            "19": "Bhagya Madesh",
+            "20": "M.U. Subaiah",
+            "21": "C. Vedavathi",
+            "22": "Namratha",
+            "23": "M. Pramila",
+            "24": "C. Ramesh",
+            "25": "R. Rangaswamy",
+            "26": "Tasneem Bano",
+            "27": "Mohamad RaPhik",
+            "28": "Dr. Ashwini",
+            "29": "Syad Hasarathulla",
+            "30": "Usha",
+            "31": "Shaphi Ahamed",
+            "32": "Shanthakumari",
+            "33": "Bashir Ahamed",
+            "34": "Hajeera Seema",
+            "35": "Sathvik",
+            "36": "Rajani Annaiah",
+            "37": "Ashwini",
+            "38": "C. Sridhar",
+            "39": "Sathyaraj",
+            "40": "M. Sathish",
+            "41": "R. Nagaraj",
+            "42": "M. Shivakumar",
+            "43": "Gopi",
+            "44": "Savitha",
+            "45": "K. Nirmala",
+            "46": "M. Lakshmi",
+            "47": "Shivakumar",
+            "48": "M.S. Shobha",
+            "49": "N. Sowmya",
+            "50": "V. Lokesh",
+            "51": "B.V. Manjunath",
+            "52": "Chayadevi",
+            "53": "Roopa",
+            "54": "Puttanigamma",
+            "55": "M.V. Ramaprasad",
+            "56": "Begum (Palavi)",
+            "57": "M.C. Ramesh",
+            "58": "Sharath Kumar",
+            "59": "Sunanda Palanetra",
+            "60": "Bhuvaneshwari",
+            "61": "Shobha",
+            "62": "Shanthamma",
+            "63": "Sharadamma",
+            "64": "Champaka",
+            "65": "Geetha"
+            // Add more wards as needed
+        };
+
+        function updateCorporator() {
+            const wardSelect = document.getElementById("ward");
+            const corporatorInput = document.getElementById("corporator");
+            corporatorInput.value = wardData[wardSelect.value] || "";
+        }
+    </script>
+</head>
+<body>
+	<header>
+        <h1>Contacts</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="road.html">Roads</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Contact of Ward Corporators</h2>
+		<p>Find your ward Corporators</p>
+        <form>
+            <label for="ward">Select Ward:</label>
+            <select id="ward" name="ward" onchange="updateCorporator()">
+                <option value="">-- Select a Ward --</option>
+                <option value="1">Ward 1 - Hebbal, Lakshmikanthanagar</option>
+                <option value="2">Ward 2 - Manchegowdanakoppalu</option>
+                <option value="3">Ward 3 - Mahadeswara Extension</option>
+                <option value="4">Ward 4 - Hebbal, Loknayaknagar</option>
+                <option value="5">Ward 5 - Kumbarakoppalu</option>
+                <option value="6">Ward 6 - Gokulam</option>
+                <option value="7">Ward 7 - Metagalli</option>
+                <option value="8">Ward 8 - Bannimantap HUDCO Layout</option>
+                <option value="9">Ward 9 - Kesare</option>
+				<option value="10">Ward 10 - Rajiv Nagar</option>
+                <option value="11">Ward 11 - Shanti Nagar (Mahadevapura Road)</option>
+				<option value="12">Ward 12 - Shanti Nagar (Indira Gandhi Road)</option>
+				<option value="13">Ward 13 - Udayagiri</option>
+				<option value="14">Ward 14 - Satyanagar</option>
+				<option value="15">Ward 15 - Rajendra Nagar</option>
+				<option value="16">Ward 16 - Subashnagar</option>
+				<option value="17">Ward 17 - Bannimantap</option>
+				<option value="18">Ward 18 - Yadavagiri</option>
+				<option value="19">Ward 19 - Jayalakshmipuram (V.V. Mohalla)</option>
+				<option value="20">Ward 20 - Vijayanagar</option>
+				<option value="21">Ward 21 - Gangothri</option>
+				<option value="22">Ward 22 - Paduvarahalli</option>
+				<option value="23">Ward 23 - Subbarayanakere</option>
+				<option value="24">Ward 24 - Mandi Mohalla</option>
+				<option value="25">Ward 25 - Tilak Nagar</option>
+				<option value="26">Ward 26 - Meena Bazar</option>
+				<option value="27">Ward 27 - Veeranagere</option>
+				<option value="28">Ward 28 - Gandhinagar</option>
+				<option value="29">Ward 29 - N.R. Mohalla</option>
+				<option value="30">Ward 30 - Kyathmaranahalli</option>
+				<option value="31">Ward 31 - Kanteerava Narasimharajapura (Ghousianagar)</option>
+				<option value="32">Ward 32 - Ghousianagar ‘A’ Block (Osmania)</option>
+				<option value="33">Ward 33 - Azeez Sait Nagar</option>
+				<option value="34">Ward 34 - Kalyanagiri</option>
+				<option value="35">Ward 35 - Sathagalli Layout First Stage</option>
+				<option value="36">Ward 36 - Yeraganahalli (Ambedkar Colony)</option>
+				<option value="37">Ward 37 - Raghavendranagar</option>
+				<option value="38">Ward 38 - Giriyabovipalya</option>
+				<option value="39">Ward 39 - Gayatripuram First Stage</option>
+				<option value="40">Ward 40 - Lashkar Mohalla</option>
+				<option value="41">Ward 41 - Devaraja Mohalla</option>
+				<option value="42">Ward 42 - K.G. Koppalu</option>
+				<option value="43">Ward 43 - T.K. Layout</option>
+				<option value="44">Ward 44 - Janathanagar</option>
+				<option value="45">Ward 45 - Sharadadevinagar</option>
+				<option value="46">Ward 46 - Dattagalli</option>
+				<option value="47">Ward 47 - Kuvempunagar</option>
+				<option value="48">Ward 48 - Jayanagar</option>
+				<option value="49">Ward 49 - Lakshmipuram</option>
+				<option value="50">Ward 50 - Sunnadakeri</option>
+				<option value="51">Ward 51 - Agrahara</option>
+				<option value="52">Ward 52 - Ittigegud</option>
+				<option value="53">Ward 53 - Kurubarahalli</option>
+				<option value="54">Ward 54 - Gundu Rao Nagar</option>
+				<option value="56">Ward 55 - Chamundipuram</option>
+				<option value="56">Ward 56 - Krishnamurthypuram</option>
+				<option value="57">Ward 57 - Kuvempunagar-CITB</option>
+				<option value="58">Ward 58 - Ramakrishnagar</option>
+				<option value="59">Ward 59 - Kuvempunagar ‘M’ Block</option>
+				<option value="60">Ward 60 - Ashokapuram</option>
+				<option value="61">Ward 61 - Vidyaranyapuram</option>
+				<option value="62">Ward 62 - Vishweshwaranagar</option>
+				<option value="63">Ward 63 - J.P. Nagar</option>
+				<option value="64">Ward 64 - Aravindnagar</option>
+				<option value="65">Ward 65 - Srirampura</option>
+				
+            </select>
+
+            <label for="corporator">Corporator Name:</label>
+            <input type="text" id="corporator" name="corporator" readonly>
+
+            <button type="clear">Clear</button>
+        </form>
+    </div>
+	<footer id="footer-complaints">
+        <p>&copy; 2025 Smart City Tracker - Mysuru</p>
+    </footer>
+</body>
+</html>
+<style>
+	header {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    body {
+		background: url('background.jpg') no-repeat center center fixed;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    main {
+        flex: 1;
+    }
+	.container {
+        background: white;
+	}
+    footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
